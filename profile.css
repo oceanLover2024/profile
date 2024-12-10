@@ -1,0 +1,141 @@
+/*共同的*/
+body{
+    background: linear-gradient(to bottom, rgb(178, 198, 228) 40%, rgb(219, 224, 228) 60%);
+    min-height: 100vh;
+    color:  rgb(5, 66, 96);font-size: 16px;}
+
+a.link:link, a.link:visited, a.link:active{  
+    color:rgb(5, 66, 96);          
+    background-color: rgb(178, 198, 228);
+    text-decoration: none;}
+
+a.link:hover{
+    color: rgb(155, 181, 213); 
+    background-color: rgb(178, 198, 228);
+    text-decoration: none;}
+
+.head{
+    display: flex;
+    padding: 10px;margin: 10px;        
+    background-color: rgb(178, 198, 228);}
+
+.icon{
+    flex:none ;
+    width: 20px; height:20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: rgb(5, 66, 96);} 
+
+.name{
+    flex:auto;}  
+
+.paging{
+    flex:none ;width: 8%;}
+
+/*回應式設計*/
+.desktop{
+    display: block;}
+
+.mobile{
+    display: none;}
+
+@media(max-width:500px){/*螢幕寬度小於500px*/
+    .desktop{
+        display:none;}
+
+    .mobile{
+        display: block;}
+}
+
+/*mobile*/
+.box{
+    position: absolute; right:10px; top:10px;
+    display: none;
+    width: 150px; height: 170px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    padding: 10px;}
+
+.x{
+    text-align: right;}
+
+.linkText{
+    padding: 10px;
+    text-align: center;}
+
+/*profile-desktop */
+#circle{
+    display: inline-block;
+    width:100px;
+    height:100px;
+    border-radius: 50%; 
+    text-align: center;
+    line-height: 100px;}      
+
+.about{
+    margin: 20px;            
+    margin-left:200px;                     
+    background-color: rgb(238, 210, 231);}  
+
+.question{
+    margin: 20px;
+    background-color: rgb(226, 228, 158);}
+
+.contact{
+    margin: 20px;
+    background-color: rgb(173, 221, 182);}
+                    
+.welcome{
+    font-size: 60px; 
+    margin-top: 30px; margin-left: 60px;}
+
+.innertext{
+    margin-left: 120px; padding: 10px;}
+
+.pic{
+    position: absolute; top:110px; right:150px;
+    width: 200px; height: 200px;
+    border-radius: 50%;}
+/*桌機版的圈圈超連結*/      
+a.circleLink:link, a.circleLink:visited, a.circleLink:active{  
+    color:rgb(5, 66, 96);          
+    background-color: transparent;
+    text-decoration: none;}
+
+a.circleLink:hover{
+    color: rgb(155, 181, 213); 
+    background-color: transparent;
+    text-decoration: none;}
+
+/*profile-mobile*/    
+.mobileWelcome{
+    font-size:40px;
+    margin-left: 10px;}
+
+.mobileInnertext{
+    padding: 10px;
+    margin-left: 30px; margin-bottom: 10px;}
+
+.circlePosition{
+    display: flex;}
+
+.circleSize{
+    width:70px; height:70px;
+    border-radius: 50%; 
+    text-align: center;
+    line-height: 70px;}
+
+.mobileAbout{
+    background-color: rgb(238, 210, 231);
+    margin-top: 40px; margin-left: 40px;}
+
+.mobileQuestion{
+    background-color: rgb(226, 228, 158);     
+    margin-left: 10px;}
+
+.mobileContact{
+    background-color: rgb(173, 221, 182);
+    margin-top: 40px; margin-left: 10px;}
+
+.mobilePic{
+    margin-left: 5px;}

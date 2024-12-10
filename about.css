@@ -1,0 +1,71 @@
+/*共同的*/
+body{/*背景的樣式,字體的大小*/
+    background: linear-gradient(to bottom, rgb(178, 198, 228) 40%, rgb(219, 224, 228) 60%);
+    min-height: 100vh;
+    color:  rgb(5, 66, 96);font-size: 16px;}
+
+a.link:link, a.link:visited, a.link:active{  /*超連結的樣式*/
+    color:rgb(5, 66, 96);          
+    background-color: rgb(178, 198, 228);
+    text-decoration: none;}
+
+a.link:hover{
+    color: rgb(155, 181, 213); 
+    background-color: rgb(178, 198, 228);
+    text-decoration: none;}
+
+.head{/*功能列的排版與樣式*/
+    display: flex;
+    padding: 10px; margin: 10px;        
+    background-color: rgb(178, 198, 228);}
+
+.icon{/*Yu Jen Siao前面那個圈圈*/
+    flex:none ;
+    width: 20px; height:20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: rgb(5, 66, 96);} 
+
+.name{/*Yu Jen Siao的排版,把<a>用<div>包起來,控制排版,讓後面的paging在最右邊*/ 
+    flex:auto;} 
+
+.paging{/*跳轉網頁的排版與樣式(About Question Contact)*/
+    flex:none ;width: 8%;}
+/*回應式設計*/
+.desktop{
+    display: block;}
+
+.mobile{
+    display: none;}
+
+@media(max-width: 500px){/*螢幕寬度小於500px*/
+    .desktop{
+        display: none;}
+
+    .mobile{
+        display: block;
+    }
+}
+/*mobile*/
+.box{
+    position: absolute; right:10px; top:10px;
+    display: none;
+    width: 150px; height: 170px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    padding: 10px;}
+
+.x{/*讓X在方塊左邊*/
+    text-align: right;}
+
+.listText{/*box內的跳轉網頁文字*/
+    padding: 10px;
+    text-align: center;}
+
+/*about*/
+tr,td{
+    padding: 10px; 
+}
+.mobileTable{
+    font-size: 14px;    
+}

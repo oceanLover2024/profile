@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Home</title>
+        <link rel="stylesheet" type = "text/css" href="profile.css">
+        <script type="text/javascript">
+            /*desktop的功能列*/
+             function linkToAbout(){
+                window.location.href="about.html";}
+
+            function linkToQuestion(){
+                window.location.href="question.html";}
+
+            function linkToContact(){
+                window.location.href="contact.html";}
+            
+            /*手機版功能列的下拉式選單*/
+            function list(){
+                let list = document.querySelector(".list");
+                let box = document.querySelector(".box");
+                list.style.display= "none";
+                box.style.display= "block";}
+
+            function x(){
+                let list = document.querySelector(".list");
+                let box = document.querySelector(".box");
+                list.style.display= "block";
+                box.style.display= "none";}          
+        </script>       
+    </head>
+    <body>
+        <!--電腦版-->
+        <div class="desktop">
+            <div class="head">
+                <div class="icon"></div>
+                <div class="name">
+                    <a href="profile.html" class="link" >Yu Jen Siao</a>
+                </div>
+                    
+                <div class="paging">
+                    <a href="about.html" class="link">About</a>
+                </div>
+
+                <div class="paging">
+                    <a href="question.html" class="link">Q&A</a>
+                </div>
+
+                <div class="paging">
+                    <a href="contact.html" class="link">Contact</a>
+                </div>
+            </div>
+            <div class="welcome">Welcome,</div>
+            <div class="innertext">
+                    thanks a lot for visiting my website,<br/>
+                    please click the following bottons below,</br>
+                    and let me show you my passion for learning programming~
+            </div>
+
+            <div><img class="pic" src="yj.jpg"/></div>            
+            
+            <div class="about" id="circle" >
+                <a href="about.html" class="circleLink">About</a>
+            </div>
+
+            <div class="question" id="circle">
+                <a href="question.html" class="circleLink">Q&A</a>
+            </div>
+
+            <div class="contact" id="circle">
+                <a href="contact.html" class="circleLink">Contact</a>
+            </div>
+        </div>
+        <!--手機版-->
+        <div class="mobile">
+            <div class="head">
+                <div class="icon"></div>
+                <div class="name">
+                    <a href="profile.html" class="link">Yu Jen Siao</a>
+                </div>
+                <div class="list" onclick="list();">&#9776</div>
+                <div class="box">
+                        <div class="x" onclick="x();">&times;</div>
+                        <div class="linkText" onclick="linkToAbout();">About</div>
+                        <div class="linkText" onclick="linkToQuestion();">Q&A</div>
+                        <div class="linkText" onclick="linkToContact();">Contact</div>
+                </div>
+            </div>
+            <div class="mobileWelcome">Welcome,</div>
+            <div class="mobileInnertext">
+                    thanks a lot for visiting my website,<br/>
+                    please click the following bottons below,</br>
+                    and let me show you my passion for learning programming~
+            </div>
+            <!--手機版的圈圈排版-->    
+            <div class="circlePosition">                 
+                <!--About-->
+                <div class="mobileAbout circleSize" >                
+                    <a href="about.html" class="circleLink">About</a>
+                </div>
+                <!--Q&A-->
+                <div class="mobileQuestion circleSize">
+                    <a href="question.html" class="circleLink">Q&A</a>
+                </div>
+                <!--Contact-->
+                <div class="mobileContact circleSize">
+                    <a href="contact.html" class="circleLink">Contact</a>
+                </div>
+                <!--pic-->
+                <div><img class="mobilePic circleSize" src="yj.jpg"/></div>
+            <div>            
+        </div>          
+    </body>
+</html>

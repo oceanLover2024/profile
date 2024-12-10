@@ -1,0 +1,77 @@
+/*共同的*/
+body{
+    background: linear-gradient(to bottom, rgb(178, 198, 228) 40%, rgb(219, 224, 228) 60%);
+    min-height: 100vh;
+    color:  rgb(5, 66, 96);font-size: 16px;}
+
+a.link:link, a.link:visited, a.link:active{  
+    color:rgb(5, 66, 96);          
+    background-color: rgb(178, 198, 228);
+    text-decoration: none;}
+
+a.link:hover{
+    color: rgb(155, 181, 213); 
+    background-color: rgb(178, 198, 228);
+    text-decoration: none;}
+
+.head{/*功能列的排版與樣式*/
+    display: flex;
+    padding: 10px;margin: 10px;        
+    background-color: rgb(178, 198, 228);}
+
+.icon{
+    flex:none ;
+    width: 20px; height:20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: rgb(5, 66, 96);} 
+
+.name{
+    flex:auto;} 
+
+.paging{/*跳轉網頁的排版與樣式(About Question Contact)*/
+    flex:none ;width: 8%;}
+    
+
+/*回應式設計*/
+.desktop{
+    display: block;}
+
+.mobile{
+    display: none;}
+
+@media(max-width:500px){/*螢幕寬度小於500px*/
+    .desktop{
+        display: none;}
+
+    .mobile{
+        display: block;}
+}
+
+/*mobile*/
+
+.box{
+    position: absolute; right:10px; top:10px;
+    display: none;
+    width: 150px; height: 170px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    padding: 10px; 
+}
+.x{
+    text-align: right;}
+
+.listText{
+    padding: 10px;
+    text-align: center;}
+
+
+/*question*/
+.p{
+    padding: 10px;}
+
+.answer{/*手機版的answer排版*/
+    margin-left: 10px;}
+
+.hide{/*手機板的切換*/
+    display: none;}

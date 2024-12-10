@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Contact</title>
+        <link rel="stylesheet" type = "text/css" href="contact.css">
+        <script type="text/javascript">
+            /*手機版本的下拉式選單從隱藏切換為展示*/
+            function list(){
+                let list = document.querySelector(".list");
+                let box = document.querySelector(".box");
+                list.style.display= "none";
+                box.style.display= "block";}
+            /*點選選單上的叉叉讓選單隱藏*/
+            function x(){
+                let list = document.querySelector(".list");
+                let box = document.querySelector(".box");
+                list.style.display= "block";
+                box.style.display= "none";
+            }
+            /*頁面跳轉*/
+            function linkToAbout(){
+                window.location.href="about.html";
+            }
+            function linkToQuestion(){
+                window.location.href="question.html";
+            }
+            function linkToContact(){
+                window.location.href="contact.html";
+            }
+
+        </script>
+           
+    </head>
+
+    <body>
+    <!--電腦版--> 
+        <div class="desktop">
+            <div class="head"> 
+                <div class="icon"></div>
+                <div class="name">
+                    <a href="profile.html" class="link">Yu Jen Siao</a>
+                </div>
+                    
+                <div class="paging">
+                    <a href="about.html" class="link">About</a>
+                </div>
+
+                <div class="paging">
+                    <a href="question.html" class="link">Q&A</a>
+                </div>
+
+                <div class="paging">
+                    <a href="contact.html" class="link">Contact</a>
+                </div>
+            </div>
+
+            <table >
+                <tr>
+                    <td>Tel</td>
+                    <td>0953-559-937</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>contentment731@yahoo.com.tw</td>
+                </tr>
+                <tr>
+                    <td>Facebook</td>
+                    <td>Yu Jen Siao</td>
+                </tr>
+            </table>
+        </div>
+    <!--手機版-->
+        <div class="mobile">
+            <div class="head">
+                <div class="icon"></div>
+                <div class="name">
+                    <a href="profile.html" class="link">Yu Jen Siao</a>
+                </div>
+                <!--下拉式選單的三-->
+                <div class="list" onclick="list();">&#9776</div>
+               
+                <div class="box">
+                    <div class="x" onclick="x();">&times;</div>
+                    <div class="listText" onclick="linkToAbout();">About</div>
+                    <div class="listText" onclick="linkToQuestion();">Q&A</div>
+                    <div class="listText" onclick="linkToContact();">Contact</div>
+                </div>                 
+            </div>
+            <table >
+                <tr>
+                    <td>Tel</td>
+                    <td>0953-559-937</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>contentment731@yahoo.com.tw</td>
+                </tr>
+                <tr>
+                    <td>Facebook</td>
+                    <td>Yu Jen Siao</td>
+                </tr>
+            </table>
+        </div>              
+    </body>
+</html>
